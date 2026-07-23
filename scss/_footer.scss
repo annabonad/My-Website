@@ -63,16 +63,6 @@
   margin-top: 56px;
 }
 
-.footer-form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-
-  @include md-down {
-    grid-template-columns: 1fr;
-  }
-}
-
 .footer-field {
   display: flex;
   flex-direction: column;

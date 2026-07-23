@@ -1,16 +1,6 @@
 @use 'variables' as *;
 
 
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-
-  @include md-down {
-    grid-template-columns: 1fr;
-  }
-}
-
 .work-card {
   display: block;
   background: #FAFAFA;
