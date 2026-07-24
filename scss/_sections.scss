@@ -2,7 +2,41 @@
 
 
 .section {
-  padding: 110px 0;
+  padding: 110px 0 110px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.page-header-top {
+  text-align: center;
+}
+
+.page-header-scroll {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray-text);
+  margin-bottom: 14px;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: -0.02em;
 }
 
 .section-title {
