@@ -47,7 +47,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 26px 0;
+  padding: 24px 0;
   gap: 24px;
   list-style: none;
 
@@ -100,7 +100,7 @@ summary.entry-summary {
 
 .entry-content {
   max-width: 640px;
-  padding: 0 0 26px;
+  padding: 0 0 24px;
   font-size: 14px;
   line-height: 1.65;
   color: var(--gray-text);

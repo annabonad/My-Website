@@ -4,7 +4,7 @@
 .site-footer {
   background: var(--footer-bg);
   color: var(--white);
-  padding: 100px 0 40px;
+  padding: 110px 0 40px;
 }
 
 .footer-top {
@@ -120,7 +120,7 @@
 .footer-divider {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 56px 0 30px;
+  margin: 56px 0 32px;
 }
 
 .footer-bottom {
@@ -153,7 +153,7 @@
 .footer-nav {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
 
   a {
     display: inline-flex;

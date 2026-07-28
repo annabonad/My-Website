@@ -117,7 +117,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 26px 0;
+  padding: 24px 0;
   gap: 24px;
   list-style: none;
 }
@@ -165,7 +165,7 @@ summary.entry-summary {
 
 .entry-content {
   max-width: 640px;
-  padding: 0 0 26px;
+  padding: 0 0 24px;
   font-size: 14px;
   line-height: 1.65;
   color: var(--gray-text);
@@ -174,7 +174,7 @@ summary.entry-summary {
 .site-footer {
   background: var(--footer-bg);
   color: var(--white);
-  padding: 100px 0 40px;
+  padding: 110px 0 40px;
 }
 
 .footer-top {
@@ -293,7 +293,7 @@ summary.entry-summary {
 .footer-divider {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 56px 0 30px;
+  margin: 56px 0 32px;
 }
 
 .footer-bottom {
@@ -327,7 +327,7 @@ summary.entry-summary {
 .footer-nav {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
 }
 .footer-nav a {
   display: inline-flex;
@@ -441,7 +441,7 @@ summary.entry-summary {
   font-family: var(--font-heading);
   font-weight: 500;
   font-size: 40px;
-  padding: 8px 34px;
+  padding: 8px 32px;
   color: var(--dark);
 }
 @media (max-width: 860px) {
@@ -451,7 +451,7 @@ summary.entry-summary {
 }
 
 .hero-text {
-  margin-top: 22px;
+  margin-top: 20px;
   font-size: 16px;
   line-height: 1.65;
   color: var(--dark);
@@ -546,7 +546,7 @@ summary.entry-summary {
 }
 @media (max-width: 860px) {
   .hero-meta {
-    align-items: flex-start;
+    display: none;
   }
 }
 
@@ -654,7 +654,7 @@ summary.entry-summary {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin-bottom: 100px;
+  margin-bottom: 56px;
 }
 
 .scribble-icon {
@@ -716,7 +716,7 @@ summary.entry-summary {
   max-width: 440px;
   background: var(--nav-bg);
   border-radius: 24px;
-  padding: 44px 36px;
+  padding: 40px 32px;
   text-align: left;
   transform: translateY(12px) scale(0.98);
   transition: transform 0.25s ease;
@@ -727,8 +727,8 @@ summary.entry-summary {
 
 .wip-close {
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 16px;
+  right: 16px;
   width: 34px;
   height: 34px;
   display: inline-flex;
@@ -774,7 +774,7 @@ summary.entry-summary {
 
 @media (max-width: 520px) {
   .wip-modal {
-    padding: 36px 24px;
+    padding: 32px 24px;
   }
   .wip-title {
     font-size: 22px;
@@ -809,12 +809,12 @@ summary.entry-summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 28px;
+  padding: 24px 32px;
   font-size: 15px;
 }
 @media (max-width: 1024px) {
   .work-caption {
-    padding: 22px 24px;
+    padding: 24px;
   }
 }
 
