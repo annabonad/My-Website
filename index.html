@@ -15,7 +15,44 @@
 </head>
 <body>
 
-  
+<!-- WORK IN PROGRESS POPUP -->
+<div class="wip-overlay" id="wip-overlay">
+  <div class="wip-modal" role="dialog" aria-modal="true" aria-labelledby="wip-title">
+    <button type="button" class="wip-close" id="wip-close" aria-label="Chiudi">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <span class="badge badge-wip">Work in progress</span>
+    <h2 class="wip-title" id="wip-title">This site is still under construction</h2>
+    <p class="wip-text">
+      Some sections may be incomplete or subject to change.
+      Thanks for your patience, and enjoy your visit!
+    </p>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var overlay = document.getElementById('wip-overlay');
+    var closeBtn = document.getElementById('wip-close');
+
+    function closePopup() {
+      overlay.classList.remove('is-visible');
+    }
+
+    closeBtn.addEventListener('click', closePopup);
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closePopup();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closePopup();
+    });
+
+    window.addEventListener('DOMContentLoaded', function () {
+      overlay.classList.add('is-visible');
+    });
+  })();
+</script>
+
 <!-- HEADER -->
 <header class="site-header">
   <div class="site-container header-inner">
