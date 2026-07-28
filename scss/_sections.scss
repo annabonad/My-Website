@@ -48,6 +48,14 @@
   gap: 12px;
 }
 
+.works-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
 .scribble-icon {
   flex-shrink: 0;
 }
