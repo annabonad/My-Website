@@ -92,6 +92,7 @@
   font-size: 15px;
   font-weight: 500;
   color: var(--dark);
+  padding-bottom: 6px;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
 
@@ -171,15 +172,29 @@
 }
 
 .scroll-hint {
-  font-size: 15px;
+  font-size: 13px;
   color: var(--dark);
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  transform: translate(16px, 16px);
+}
 
-  &:hover {
-    border-color: var(--dark);
+.scroll-dot {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+@keyframes scroll-dot-bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.scroll-hint:hover .scroll-dot {
+  animation: scroll-dot-bounce 0.6s ease-in-out infinite;
 }

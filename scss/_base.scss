@@ -31,7 +31,18 @@ body {
   color: var(--dark);
   background: var(--white);
   -webkit-font-smoothing: antialiased;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='none' stroke='%231a1a1a' stroke-width='1.5'/%3E%3C/svg%3E") 8 8, auto;
+  cursor: $cursor-default;
+}
+
+a,
+button,
+summary,
+label,
+input,
+textarea,
+select,
+[role="button"] {
+  cursor: $cursor-default;
 }
 
 img {

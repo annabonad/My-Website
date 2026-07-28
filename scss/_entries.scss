@@ -28,6 +28,11 @@
 
 .entry {
   border-bottom: 1px solid #E5E5E5;
+  transition: border-color 0.2s ease, border-bottom-width 0.2s ease;
+
+  &:hover {
+    border-bottom: 1px solid var(--gray-text);
+  }
 
   &[open] .entry-plus {
     transform: rotate(45deg);
@@ -56,7 +61,7 @@
 }
 
 summary.entry-summary {
-  cursor: pointer;
+  cursor: $cursor-default;
 }
 
 .entry-main {
@@ -87,7 +92,8 @@ summary.entry-summary {
 
 .entry-plus {
   display: inline-block;
-  font-size: 16px;
+  font-size: 28px;
+  font-weight: 200;
   color: var(--gray-text);
   transition: transform 0.2s ease;
 }

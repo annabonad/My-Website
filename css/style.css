@@ -27,7 +27,18 @@ body {
   color: var(--dark);
   background: var(--white);
   -webkit-font-smoothing: antialiased;
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='none' stroke='%231a1a1a' stroke-width='1.5'/%3E%3C/svg%3E") 8 8, auto;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='9' fill='none' stroke='%231a1a1a' stroke-width='1.5'/%3E%3C/svg%3E") 10 10, auto;
+}
+
+a,
+button,
+summary,
+label,
+input,
+textarea,
+select,
+[role=button] {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='9' fill='none' stroke='%231a1a1a' stroke-width='1.5'/%3E%3C/svg%3E") 10 10, auto;
 }
 
 img {
@@ -88,6 +99,10 @@ ul {
 
 .entry {
   border-bottom: 1px solid #E5E5E5;
+  transition: border-color 0.2s ease, border-bottom-width 0.2s ease;
+}
+.entry:hover {
+  border-bottom: 1px solid var(--gray-text);
 }
 .entry[open] .entry-plus {
   transform: rotate(45deg);
@@ -114,7 +129,7 @@ ul {
 }
 
 summary.entry-summary {
-  cursor: pointer;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='9' fill='none' stroke='%231a1a1a' stroke-width='1.5'/%3E%3C/svg%3E") 10 10, auto;
 }
 
 .entry-main h3 {
@@ -142,7 +157,8 @@ summary.entry-summary {
 
 .entry-plus {
   display: inline-block;
-  font-size: 16px;
+  font-size: 28px;
+  font-weight: 200;
   color: var(--gray-text);
   transition: transform 0.2s ease;
 }
@@ -267,7 +283,7 @@ summary.entry-summary {
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 15px;
-  cursor: pointer;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='9' fill='none' stroke='%231a1a1a' stroke-width='1.5'/%3E%3C/svg%3E") 10 10, auto;
   transition: opacity 0.2s ease;
 }
 .footer-submit:hover {
@@ -340,6 +356,10 @@ summary.entry-summary {
   font-family: var(--font-heading);
   font-weight: 500;
   font-size: 17px;
+  transition: opacity 0.2s ease;
+}
+.logo:hover {
+  opacity: 0.6;
 }
 
 .main-nav {
@@ -448,6 +468,7 @@ summary.entry-summary {
   font-size: 15px;
   font-weight: 500;
   color: var(--dark);
+  padding-bottom: 6px;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
 }
@@ -530,16 +551,31 @@ summary.entry-summary {
 }
 
 .scroll-hint {
-  font-size: 15px;
+  font-size: 13px;
   color: var(--dark);
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  transform: translate(16px, 16px);
 }
-.scroll-hint:hover {
-  border-color: var(--dark);
+
+.scroll-dot {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+@keyframes scroll-dot-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.scroll-hint:hover .scroll-dot {
+  animation: scroll-dot-bounce 0.6s ease-in-out infinite;
 }
 
 .project-placeholder {
@@ -702,7 +738,7 @@ summary.entry-summary {
   background: transparent;
   color: var(--dark);
   font-size: 18px;
-  cursor: pointer;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='9' fill='none' stroke='%231a1a1a' stroke-width='1.5'/%3E%3C/svg%3E") 10 10, auto;
   border-radius: 50%;
   transition: background-color 0.2s ease;
 }
