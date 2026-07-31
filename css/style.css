@@ -573,7 +573,6 @@ summary.entry-summary {
     transform: translateY(4px);
   }
 }
-
 .scroll-hint:hover .scroll-dot {
   animation: scroll-dot-bounce 0.6s ease-in-out infinite;
 }
