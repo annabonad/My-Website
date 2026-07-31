@@ -31,7 +31,8 @@
 .work-caption {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 16px;
   padding: 24px 32px;
   font-size: 15px;
 
@@ -42,9 +43,14 @@
 
 .work-caption-name {
   font-weight: 500;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .work-caption-date {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding-top: 2px;
   color: var(--gray-text);
   font-size: 13px;
   letter-spacing: 0.03em;
