@@ -122,9 +122,9 @@ ul {
 }
 
 .contact-form-card {
-  background: transparent;
+  background: var(--yellow);
   color: var(--dark);
-  border: 3px solid var(--dark);
+  border: none;
   border-radius: 32px;
   padding: 64px;
 }
@@ -154,7 +154,7 @@ ul {
   margin-top: 16px;
   font-size: 15px;
   line-height: 1.65;
-  color: var(--gray-text);
+  color: var(--dark);
 }
 
 .contact-form-card .footer-form {
@@ -163,16 +163,16 @@ ul {
 }
 
 .contact-form-card .footer-field label {
-  color: var(--gray-text);
+  color: var(--dark);
 }
 .contact-form-card .footer-field input,
 .contact-form-card .footer-field textarea {
   color: var(--dark);
-  border-bottom: 1px solid var(--gray-line);
+  border-bottom: 1px solid var(--dark);
 }
 .contact-form-card .footer-field input::placeholder,
 .contact-form-card .footer-field textarea::placeholder {
-  color: rgba(26, 26, 26, 0.35);
+  color: rgba(26, 26, 26, 0.55);
 }
 .contact-form-card .footer-field input:focus,
 .contact-form-card .footer-field textarea:focus {
