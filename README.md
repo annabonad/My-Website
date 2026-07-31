@@ -6,7 +6,8 @@ Sito portfolio personale di Anna Bonadimani, UX/UI Designer con background da in
 
 - `index.html` — home page: hero e sezione "Selected Works"
 - `about.html` — pagina About: Professional Experience, Education, Hard Skills
-- `progetto.html` — pagina di dettaglio progetto (case study, in lavorazione)
+- `project-greentrips.html` — pagina di dettaglio progetto Green Trips (case study, in lavorazione)
+- `project-supportapp.html` — pagina di dettaglio progetto IT Support Desktop App (case study, in lavorazione)
 - `scss/` — sorgenti Sass, un partial per sezione (`_header`, `_hero`, `_works`, `_entries`, `_footer`, `_sections`, `_project-placeholder`, `_variables`, `_base`), importati da `style.scss`
 - `css/style.css` — CSS compilato (con sourcemap), collegato da tutte le pagine HTML
 - `assets/` — immagini, foto e icone del sito
