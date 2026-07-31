@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Works — Anna Bonadimani</title>
+<title>Contact — Anna Bonadimani</title>
 <link rel="icon" href="assets/icon-scratch.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
       <ol class="breadcrumbs-list">
         <li><a href="index.html" class="breadcrumbs-link">Home</a></li>
         <li class="breadcrumbs-sep" aria-hidden="true">/</li>
-        <li class="breadcrumbs-current" aria-current="page">Works</li>
+        <li class="breadcrumbs-current" aria-current="page">Contact</li>
       </ol>
     </div>
   </nav>
@@ -44,82 +44,59 @@
   <div class="site-container hero-about-inner">
     <div class="page-header">
       <div class="page-header-top">
-        <span class="eyebrow">Take a look</span>
-        <h1 class="page-title">My Works</h1>
+        <span class="eyebrow">Let's talk</span>
+        <h1 class="page-title">Contact Me</h1>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SELECTED WORKS -->
-<section class="section" id="works">
+<!-- CONTACT FORM -->
+<section class="section contact-form-section" id="contact">
   <div class="site-container">
-
-    
-    <div class="row g-4">
-
-      <div class="col-12 col-md-6">
-        <a class="work-card" href="project-greentrips.html">
-          <div class="work-thumb">
-            <img src="assets/Project-greentrips.jpg" alt="Green Trips — app mobile per viaggiare in modo eco-friendly">
-          </div>
-
-          <div class="work-caption">
-            <span class="work-caption-name">Green Trips</span>
-            <span class="work-caption-date">DEC 23, 2024</span>
-          </div>
-        </a>
+    <div class="contact-form-card">
+      <div class="contact-form-intro">
+        <h2 class="contact-form-title">Send me a message</h2>
+        <p class="contact-form-text">
+          Have a project in mind, a question, or just want to say hi?
+          Fill in the form below and I'll get back to you as soon as possible.
+        </p>
       </div>
 
-      <div class="col-12 col-md-6">
-        <a class="work-card" href="project-supportapp.html">
-          <div class="work-thumb">
-            <img src="assets/Project-supportapp.jpg" alt="IT Support Desktop App — app desktop per il supporto IT">
-          </div>
+      <form id="contact-form" class="footer-form" action="https://formsubmit.co/anna.bonadimani@outlook.com" method="POST">
+        <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
 
-          <div class="work-caption">
-            <span class="work-caption-name">IT Support Desktop App</span>
-            <span class="work-caption-date">FEB 10, 2025</span>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 footer-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="Nome" placeholder="Your name" required>
           </div>
-        </a>
-      </div>
+          <div class="col-12 col-md-6 footer-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="Email" placeholder="Your email" required>
+          </div>
+        </div>
 
+        <div class="footer-field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="Messaggio" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button type="submit" class="footer-submit">Send Message</button>
+      </form>
     </div>
-
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="site-footer" id="contact">
+<footer class="site-footer">
   <div class="site-container">
 
     <div class="footer-top">
       <h2 class="footer-title">Stay connected</h2>
     </div>
-
-    <form id="contact-form" class="footer-form" action="https://formsubmit.co/anna.bonadimani@outlook.com" method="POST">
-      <input type="hidden" name="_subject" value="Nuovo messaggio dal portfolio">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="true">
-
-      <div class="row g-4">
-        <div class="col-12 col-md-6 footer-field">
-          <label for="cf-name">Name</label>
-          <input type="text" id="cf-name" name="Nome" placeholder="Your name" required>
-        </div>
-        <div class="col-12 col-md-6 footer-field">
-          <label for="cf-email">Email</label>
-          <input type="email" id="cf-email" name="Email" placeholder="Your email" required>
-        </div>
-      </div>
-
-      <div class="footer-field">
-        <label for="cf-message">Message</label>
-        <textarea id="cf-message" name="Messaggio" rows="4" placeholder="Write your message here..." required></textarea>
-      </div>
-
-      <button type="submit" class="footer-submit">Send Message</button>
-    </form>
 
     <hr class="footer-divider">
 

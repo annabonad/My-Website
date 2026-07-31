@@ -26,6 +26,7 @@
 
 .main-nav {
   display: flex;
+  align-items: center;
   gap: 32px;
   font-size: 15px;
 
@@ -35,6 +36,20 @@
 
     &:hover {
       opacity: 0.6;
+    }
+  }
+
+  a.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--dark);
+    color: var(--white);
+    border-radius: 999px;
+    padding: 10px 24px;
+    font-weight: 500;
+
+    &:hover {
+      opacity: 0.85;
     }
   }
 }
